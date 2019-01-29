@@ -60,7 +60,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         RequestBody body = RequestBody.create(MediaType.parse("application/json; charset=utf-8"),jsonObject.toString());
 
         Request request = new Request.Builder()
-                .url(ServerUrls.PUSHSERVER_URL)
+                .url(ServerUrls.PUSH_SERVER_URL)
                 .post(body)
                 .build();
 
